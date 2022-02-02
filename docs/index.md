@@ -23,7 +23,7 @@ Introduction
 
 ### Journal Entries
 
-[Getting Started (27-01-02)](./entries/journal_0.md)  
+[Getting Started (27-01-02)](./entries/journal_0.html)  
  
 
 <br />
