@@ -23,7 +23,7 @@ Introduction
 
 ### Journal Entries
 
-[First entry here :) (dd-mm-yyyy)](./entries/journal_0.md)  
+[Getting Started (27-01-02)](./entries/journal_0.md)  
  
 
 <br />
