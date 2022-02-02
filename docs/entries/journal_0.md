@@ -49,7 +49,7 @@ List of Figures
 
 <script>
 // Store the entry id and published values in a JS script, to make life easier with updateing links.
-entry_id  = 1
+entry_id  = 0
 published = "27-01-22" 
 week = 1
 
