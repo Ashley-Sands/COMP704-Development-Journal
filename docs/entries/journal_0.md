@@ -26,9 +26,6 @@ To be honest this could have been avoided if I had just read the documentation c
 <p id="c2">
 [2] G. Brockman, V. Cheung, L. Pettersson, J. Schneider, J. Schulman, J. Tang, and W. Zaremba, “Openai gym,” arXiv preprint arXiv:1606.01540, 2016.
 
-List of Figures
-1
-
 </p>
 
 <br />
