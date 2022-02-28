@@ -11,9 +11,16 @@
 # Implementing a game and wiring up the AI
 I wanted to make something relatively simple for my first game, so I decided to make a clone of the classic ``Helicopter Flash Game`` [[fig. 1](#f1)]. The game consists of a single input and a grid based world to generate the cave [[Fig. 2](#f2)] and I throw in a collectable for good measure. I gathered that this would be a relatively simple game to implement and therefor a good starting point to work out how to map the action and observation space.
 
+<p style="text-align: center;" id="f1">
+<img src="../resources/j3-f1.png" style="margin-left: auto; margin-right: auto; width: 75%" >
+<br />
 [Fig. 1. Image of classic helicopter flash game]
-[Fig. 1. Image of My PyGame helicopter game]
-
+</p>
+<p style="text-align: center;" id="f2">
+<img src="../resources/j3-f2.png" style="margin-left: auto; margin-right: auto; width: 75%" >
+<br />
+[Fig. 2. Image of My PyGame helicopter game]
+</p>
 In a tutorial we were given in a workshop as university, we were given a couple of hints towards different spaces that can be defined in OpenAi Gym, namely ``Discrete`` and ``Box`` spaces. It suggested that ``Discrete`` was for a fixed amount of actions while Box was for continues spaces. However that didn’t really mean much to me, but it was a good starting point for some research, which lead me to the OpenAi Git repo [folder containing the space classes](https://github.com/openai/gym/tree/master/gym/spaces). The repo further introduced a few other types of spaces, namely ``Tuple`` and ``Dict`` (or Dictionary). However, this sill didn’t mean much to me and just added to the confusion, until I stumbled across the ([Blackjack](https://github.com/openai/gym/blob/master/gym/envs/toy_text/blackjack.py)) environment, which had a really good description of the ``Discrete`` space along with an example use of the ``Tulpe`` space. In the blackjack environment they defined there actions as ``Discrete(2)`` since it had two actions ``stick`` and ``hit`` and then they defined three other Discretes for the observation space containing the total number of states. Here, I realized that ``Discrete`` was to defined a fixed number of states and therefor I should define my action space as ``Discrete(2)`` as there are two actions that the AI agent can makes (either press space or not press space). 
 
 Lastly, to gage an understanding for the ``Box`` space, I explored several Git repos, finding the ``CartPole`` example the most useful. They define there observation space as a box with four min/max ranges. the first for cart position, second for the cart velocity, third for the pole angle and the last for the pole angular velocity. This made me think that the ``Box`` space would be good for the collectables position in the helicopter game since it continually moves towards the player within a particular range along the X and Y axis.
@@ -46,7 +53,11 @@ With these simple changes I ran it again with the previous settings and ...
 ## It actually done a thing
 To my surprise, it worked! I honestly didn’t know what to expect when I hit play, but the helicopter managed to stay within the screen space (outside of the screen space was considered a death without the obstacles collisions enabled) However, the helicopter was extremely unstable and unable to fly in a straight line, no matter how much training [[Fig. 3](#f3)].
 
+<p style="text-align: center;" id="f3">
+<img src="../resources/j3-f3.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<br />
 [Fig. 3, First flight]
+</p>
 
 <br />
 <br />
