@@ -18,14 +18,13 @@ To be honest this could have been avoided if I had just read the documentation c
 <br />
 
 ### Cites
-##### All citations are available in a single [bibtex file](../references.bib)
+##### All citations are available in a single
 
 <p id="c1">
 [1]  F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay, “Scikit-learn: Machine learning in Python,” Journal of Machine Learning Research, vol. 12, pp. 2825–2830, 2011.
 </p>
 <p id="c2">
 [2] G. Brockman, V. Cheung, L. Pettersson, J. Schneider, J. Schulman, J. Tang, and W. Zaremba, “Openai gym,” arXiv preprint arXiv:1606.01540, 2016.
-
 </p>
 
 <br />

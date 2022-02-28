@@ -82,7 +82,7 @@ Now it should just be a case of creating a ``pyGame`` passing that into the ``Gy
 <script>
 // Store the entry id and published values in a JS script, to make life easier with updateing links.
 entry_id  = 2
-published = "04-02-22" 
+published = "07-02-22" 
 week = 2
 
 document.getElementById("index").innerHTML = entry_id

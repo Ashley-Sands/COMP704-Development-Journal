@@ -24,7 +24,7 @@ To begin, getting know some of the AI frameworks available in Python, we were gi
 
 <br />
 
-OpenAi Gym is a framework (or toolkit) for developing and comparing reinforcement learning algorithms [[4](#c4)], while stable baseline 3 contains the algorithms themself. We were given another tutorial which outlined the basic steps required to start experimenting with the example games included in OpenAi Gym, namly cartpole [[5](#c5)]. In the the tutorial we were encouraged to experiment with a couple of different models such as Deep Q Network (DQN) [[6](#c6)] and Proximal Policy Optimization (PPO) [[7](#c7)]. However, while it was nice to see it work, I was struggling to wrap my head around the structure of the application, mostly in regards to selecting actions, applying rewards and the training process. After a short conversation with my lecturer and digging through a couple of git repositories, I soon realised my misunderstanding. Basically, I didn't realise that OpenGame AI is more or less just a framework for ticking (running) the environment and agents with the required methods implemented to train and run the Machine Learning model. Such as ``reset`` to reset the environment to it initialised state and the ``step`` method which ticks the environment and returns the latest observation, reward for the last performed action, whether or not we have completed the environment and some debug info.
+OpenAi Gym is a framework (or toolkit) for developing and comparing reinforcement learning algorithms [[4](#c4)], while stable baseline 3 contains the algorithms themself. We were given another tutorial which outlined the basic steps required to start experimenting with the example games included in OpenAi Gym, namly cartpole. In the the tutorial we were encouraged to experiment with a couple of different models such as Deep Q Network (DQN) [[5](#c6)] and Proximal Policy Optimization (PPO) [[6](#c7)]. However, while it was nice to see it work, I was struggling to wrap my head around the structure of the application, mostly in regards to selecting actions, applying rewards and the training process. After a short conversation with my lecturer and digging through a couple of git repositories, I soon realised my misunderstanding. Basically, I didn't realise that OpenGame AI is more or less just a framework for ticking (running) the environment and agents with the required methods implemented to train and run the Machine Learning model. Such as ``reset`` to reset the environment to it initialised state and the ``step`` method which ticks the environment and returns the latest observation, reward for the last performed action, whether or not we have completed the environment and some debug info.
  
 We then pass the OpenAi Environment into the ML model which then uses the information returned from ``step`` to update the model and once it is done reset is called. Once training is complete it is as simple as ticking the environment, collecting the observations and passing it into the predict method available on the ML Model (ie, DQN, PPO, A2C ...). The predict method then returns the action that the agent should perform and the next predicted state of the environment. And just like that we have an agent that's able to play cartpole [[Fig. 3](#f3)]. :P
 
@@ -35,19 +35,26 @@ We then pass the OpenAi Environment into the ML model which then uses the inform
 </p>
 
 ### Cites
-##### All citations are available in a single [bibtex file](../references.bib)
+##### All citations are available in a single
+
 
 <p id="c1">
-[1] Author, “Title,” [Online]. Available: URL, [Accessed: day Month Year] 
-
-1] sc learn
-2] underfitting / overfitting
-3] matplot
-4] OpenAI Gym
-5] Cart Pole
-6] DQN
-6] PPO
-
+[1]  F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay, “Scikit-learn: Machine learning in Python,” Journal of Machine Learning Research, vol. 12, pp. 2825–2830, 2011.
+</p>
+<p id="c2">
+[2] AWS, “Model Fit: Underfitting vs. Overfitting,” [Online]. Available: https://docs.aws.amazon.com/machine-learning/latest/dg/model-fit-underfitting-vs-overfitting. html, [Accessed 1 February 2022].
+</p>
+<p id="c3">
+[3] J. D. Hunter, “Matplotlib: A 2d graphics environment,” Computing in Science & Engineering, vol. 9, no. 3, pp. 90–95, 2007.
+</p>
+<p id="c4">
+[4] G. Brockman, V. Cheung, L. Pettersson, J. Schneider, J. Schulman, J. Tang, and W. Zaremba, “Openai gym,” arXiv preprint arXiv:1606.01540, 2016.
+</p>
+<p id="c5">
+[5] H. van Hasselt, A. Guez, and D. Silver, “Deep reinforcement learning with double q-learning,” 2015.
+</p>
+<p id="c6">
+[6] J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, “Proximal policy optimization algorithms,” 2017
 </p>
 
 <br />
