@@ -14,15 +14,6 @@ This is a template for journal entries to help keep consistency!
 [Page content goes here]
 
 <br />
-
-### Cites
-##### All citations are available in a single [bibtex file](../references.bib)
-
-<p id="c1">
-[1] Author, “Title,” [Online]. Available: URL, [Accessed: day Month Year] 
-</p>
-
-<br />
 <br />
 
 <span class="priv_entry" style="display: inline;"></span>
@@ -32,10 +23,6 @@ This is a template for journal entries to help keep consistency!
 <span class="next_entry" style="display: inline;"></span>
 
 <br />
-<br />
-
-**Please refer to the [Licences and Sources](../resources/licences-and-sources) document for content used from external sources along with usage and licence infomation**
-
 <br />
 
 <script>

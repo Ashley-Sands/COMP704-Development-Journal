@@ -62,10 +62,6 @@ We then pass the OpenAi Environment into the ML model which then uses the inform
 <br />
 <br />
 
-**Please refer to the [Licences and Sources](../resources/licences-and-sources) document for content used from external sources along with usage and licence infomation**
-
-<br />
-
 <script>
 // Store the entry id and published values in a JS script, to make life easier with updateing links.
 entry_id  = 1

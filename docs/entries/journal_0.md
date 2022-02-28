@@ -29,7 +29,6 @@ To be honest this could have been avoided if I had just read the documentation c
 </p>
 
 <br />
-<br />
 
 <span class="priv_entry" style="display: inline;"></span>
 | 
@@ -38,10 +37,6 @@ To be honest this could have been avoided if I had just read the documentation c
 <span class="next_entry" style="display: inline;"></span>
 
 <br />
-<br />
-
-**Please refer to the [Licences and Sources](../resources/licences-and-sources) document for content used from external sources along with usage and licence infomation**
-
 <br />
 
 <script>
