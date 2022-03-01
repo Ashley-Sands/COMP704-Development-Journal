@@ -1,4 +1,4 @@
-## [Tital Goes Here] - Journal Entry Template 
+## Adding the other bits
 #### Entry: <span id="index"></span>, Published: <span id="published"></span>
 
 <span class="priv_entry" style="display: inline;"></span>
@@ -8,7 +8,7 @@
 <span class="next_entry" style="display: inline;"></span>
 
 
-# Adding the other bits
+
 
 ## The goal
 Now it was time to introduce the ``Goal`` and I trained it again with DQN increasing the training timesteps to 175,000 as I found it performed better while experimenting without goals. To be honest I felt like it was making an effort to collect the goals however it wasn’t quite getting there [[Fig. 1](#f1)]. So I went about increasing the training steps to 250,000 witch had a positive effect in terms of collecting goals, however it now starting to fall out-side of the screen bounds and consequently die [[Fig.2](#f2)]. So I thought I would increase the training steps further to 350,000 to see if it made any improvement, to which it collected pretty much ever goal and to my surprise it was slightly more stable [[fig. 3.1](#f3_1)]. I mean it was still unstable but it was staying more within the screen bounds and better lining up with goals [[Fig. 3.2](#f3_2)].

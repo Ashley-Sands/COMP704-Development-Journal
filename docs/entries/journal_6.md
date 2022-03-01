@@ -1,4 +1,4 @@
-## [Tital Goes Here] - Journal Entry Template 
+## Snake
 #### Entry: <span id="index"></span>, Published: <span id="published"></span>
 
 <span class="priv_entry" style="display: inline;"></span>
@@ -7,7 +7,6 @@
 | 
 <span class="next_entry" style="display: inline;"></span>
 
-# Snake (13/02)
 After the helicopter game I wanted to try out a different environment, so I decided to make snake since it relatively easy to implerment. Furthermore, it only has a few available actions (none, up, left, down, right) for the ML agent to choose from along with a confined observation space. Since the agent can only choose one of five actions at any one time, meant I could define the action space as ``Discrete(5)`` witch made it simple to implement. For snake defining the observation space, was a bit easier than the helicopter game (probably because it was my second attempt). Since snake is basically a 2D grid it meant I could implerment the observation space as a 1D array (``y*x_size+x = cell id``) with one of four possible values in the range of zero and three (``0=empty, 1=goal, 2=avoid, 3=snake head``). I gathered that it would be pointless to implerment a fifth for the snake tail since it something that we want to avoid, so it could fall under the same category as boundaries. Therefor both bounds and the snake tail are both defined in the observation space as ``2`` (``Avoid``). So the action and observations space has been defined in snake as
 
 ```python

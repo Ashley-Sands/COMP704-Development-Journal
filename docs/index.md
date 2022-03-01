@@ -1,43 +1,20 @@
 ## Ashley's Machine Learning Development Journal
 #### for **GAM704 - Artificial Intelligence** at **Falmouth University**
 
-<br />
-<br />
-
-### Introduction
-
-<br />
-<br />
-
-<p style="text-align: center;">
-<img src="http://www.ashleysands.co.uk/includes/images/me.jpeg" style="border:4px solid black; border-radius: 100%; width: 250px; margin-left: auto; margin-right: auto;" >
-<br />
-[Fig. 1. Ashley Sands]
-</p>
-
-Introduction
-
 
 <br />
 <br />
 
 ### Journal Entries
 
-[Getting Started (27-01-02)](./entries/journal_0.html)  
+[Getting Started (27-01-22)](./entries/journal_0.html)
+[Getting to know some basic Machain Learning AI frameworks (01-02-22)](./entries/journal_1.html)
+[Creating a simple framework/wrapper for PyGame, OpenAiGym and stable baseline 3 (07-02-22)](./entries/journal_2.html)
+[Implementing a game and wiring up the AI (11-02-22)](./entries/journal_3.html)
+[Adding the other bits (14-02-22)](./entries/journal_4.html)
+[Something’s not right... (18-02-22)](./entries/journal_5.html)
+[Snake (21-02-22)](./entries/journal_6.html)
  
 
 <br />
-<br />
-
-### Cites
-##### All citations are available in a single [bibtex file](../references.bib)
-<p id="c1">
-[1]  K. Bailey,“Cloud Computing Will Bring Big Changes to First-PersonShooters in ’Just a Couple Years,’ DICE GM Says,” [Online]. Available: https://www.ign.com/articles/battlefield-2042-cloud-computing, 2021, [Accessed 21September 2021].
-</p>
-
-<br />
-<br />
-
-**Please refer to the [Licences and Sources](../resources/licences-and-sources) document for content used from external sources along with usage and licence infomation**
-
 <br />

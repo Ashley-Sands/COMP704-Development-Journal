@@ -1,4 +1,4 @@
-## [Tital Goes Here] - Journal Entry Template 
+## Something’s not right...
 #### Entry: <span id="index"></span>, Published: <span id="published"></span>
 
 <span class="priv_entry" style="display: inline;"></span>

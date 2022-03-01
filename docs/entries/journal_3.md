@@ -1,4 +1,4 @@
-## [Tital Goes Here] - Journal Entry Template 
+## Implementing a game and wiring up the AI
 #### Entry: <span id="index"></span>, Published: <span id="published"></span>
 
 <span class="priv_entry" style="display: inline;"></span>
@@ -8,7 +8,6 @@
 <span class="next_entry" style="display: inline;"></span>
 
 
-# Implementing a game and wiring up the AI
 I wanted to make something relatively simple for my first game, so I decided to make a clone of the classic ``Helicopter Flash Game`` [[fig. 1](#f1)]. The game consists of a single input and a grid based world to generate the cave [[Fig. 2](#f2)] and I throw in a collectable for good measure. I gathered that this would be a relatively simple game to implement and therefor a good starting point to work out how to map the action and observation space.
 
 <p style="text-align: center;" id="f1">
