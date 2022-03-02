@@ -14,22 +14,22 @@
 Now it was time to introduce the ``Goal`` and I trained it again with DQN increasing the training timesteps to 175,000 as I found it performed better while experimenting without goals. To be honest I felt like it was making an effort to collect the goals however it wasn’t quite getting there [[Fig. 1](#f1)]. So I went about increasing the training steps to 250,000 witch had a positive effect in terms of collecting goals, however it now starting to fall out-side of the screen bounds and consequently die [[Fig.2](#f2)]. So I thought I would increase the training steps further to 350,000 to see if it made any improvement, to which it collected pretty much ever goal and to my surprise it was slightly more stable [[fig. 3.1](#f3_1)]. I mean it was still unstable but it was staying more within the screen bounds and better lining up with goals [[Fig. 3.2](#f3_2)].
 
 <p style="text-align: center;" id="f1">
-<img src="../resources/j4-f1.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f1.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig. 1, Making a effort to collect goals after 175,000 training steps]
 </p>
 <p style="text-align: center;" id="f2">
-<img src="../resources/j4-f2.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f2.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig. 2, Starting to collect goals after 250,000 training steps]
 </p>
 <p style="text-align: center;" id="f3_1">
-<img src="../resources/j4-f3_1.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f3_1.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig. 3.1, After 350,000 training steps]
 </p>
 <p style="text-align: center;" id="f3_2">
-<img src="../resources/j4-f3_2.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f3_2.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig. 3.2, After 350,000 training steps]
 </p>
@@ -49,12 +49,12 @@ observation_space = {
 Following the change, I trained the agent once more using DQN and 175,000 training steps, since this seems to be my baseline timesteps from the previous runs, before it learns something meaningful. And it seemed to of worked [[Fig.4.1](#f4_1)], it wasn’t perfect by any means, but it was stable and going for the collectables. However, it would still sometimes go out of bounds, although that is consistent will out previously runs at 175,000 timesteps. So, I thought I would try out the higher value of 350,000 timesteps, before moving onto the obstacle space. However, this appeared to have a negative effect [[Fig 4.2](#f4_2)], I guess it had overfitted the dataset.
 
 <p style="text-align: center;" id="f4_2">
-<img src="../resources/j4-f4_2.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f4_2.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig 4.1 Show how add the vertical speed to the observation space stabilized the helicopter, after 175,000 timesteps.]
 </p>
 <p style="text-align: center;" id="f4_2">
-<img src="../resources/j4-f4_2.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f4_2.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig 4.2 Show how add the vertical speed to the observation space stabilized the helicopter, after 350,000 timesteps.]
 </p>
@@ -77,14 +77,14 @@ observation_space = {
 [The observation space after adding obstacles]
 
 <p style="text-align: center;" id="f5">
-<img src="../resources/j4-f5.png" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f5.png" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig 8. shows the space viewable to the ai, highlighted in blue ]
 </p>
 So now it was time to see if it could learn to avoid the obstacle cells. Therefore, I set it off to learn for 175,000 timesteps using ``DQN``. To be far, it done quite a good job at avoiding the obstacle cells and it seemed to be getting the hang of collecting the goals [[fig.6](#f9)].
 
 <p style="text-align: center;" id="f6">
-<img src="../resources/j4-f6.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j4-f6.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig 5. Show the agent avoiding the obstacles]
 </p>

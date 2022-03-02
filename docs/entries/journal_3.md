@@ -11,12 +11,12 @@
 I wanted to make something relatively simple for my first game, so I decided to make a clone of the classic ``Helicopter Flash Game`` [[fig. 1](#f1)]. The game consists of a single input and a grid based world to generate the cave [[Fig. 2](#f2)] and I throw in a collectable for good measure. I gathered that this would be a relatively simple game to implement and therefor a good starting point to work out how to map the action and observation space.
 
 <p style="text-align: center;" id="f1">
-<img src="../resources/j3-f1.png" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j3-f1.png" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig. 1. Image of classic helicopter flash game]
 </p>
 <p style="text-align: center;" id="f2">
-<img src="../resources/j3-f2.png" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j3-f2.png" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig. 2. Image of My PyGame helicopter game]
 </p>
@@ -53,7 +53,7 @@ With these simple changes I ran it again with the previous settings and ...
 To my surprise, it worked! I honestly didn’t know what to expect when I hit play, but the helicopter managed to stay within the screen space (outside of the screen space was considered a death without the obstacles collisions enabled) However, the helicopter was extremely unstable and unable to fly in a straight line, no matter how much training [[Fig. 3](#f3)].
 
 <p style="text-align: center;" id="f3">
-<img src="../resources/j3-f3.gif" style="margin-left: auto; margin-right: auto; width: 75%" >
+<img src="../resources/j3-f3.gif" style="margin-left: auto; margin-right: auto; width: 50%" >
 <br />
 [Fig. 3, First flight]
 </p>
