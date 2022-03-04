@@ -14,6 +14,7 @@
 - [Adding the other bits (14-02-22)](./entries/journal_4.html)  
 - [Something’s not right... (18-02-22)](./entries/journal_5.html)  
 - [Snake (21-02-22)](./entries/journal_6.html)  
+- [Genetic Algorithm (02-02-22)](./entries/journal_7.html)  
  
 
 <br />
