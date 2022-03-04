@@ -42,7 +42,7 @@ Looking back, I should have either done one of two things. I either should of ju
 // Store the entry id and published values in a JS script, to make life easier with updateing links.
 entry_id  = 7
 published = "02-03-22" 
-week = -1
+week = 6
 
 document.getElementById("index").innerHTML = entry_id
 document.getElementById("published").innerHTML   = `${published} (Week: ${week})`
